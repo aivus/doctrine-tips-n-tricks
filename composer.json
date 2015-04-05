@@ -1,0 +1,13 @@
+{
+    "name": "aivus/doctrine-tips-n-tricks",
+    "require": {
+        "doctrine/orm": "~2.5",
+        "symfony/yaml": "*"
+    },
+    "authors": [
+        {
+            "name": "Ilya Antipenko",
+            "email": "aivus@aivus.name"
+        }
+    ]
+}
