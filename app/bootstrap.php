@@ -5,6 +5,11 @@ require_once PROJECT_DIR . '/vendor/autoload.php';
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
 
+// Require all entities
+foreach (glob(PROJECT_DIR . '/src/GeneratedEntities/*.php') as $file) {
+    require_once $file;
+}
+
 // the connection configuration
 $dbParams = array(
     'driver'   => 'pdo_mysql',
