@@ -1,0 +1,26 @@
+User:
+    type: entity
+    table: user
+    repositoryClass: UserRepository
+    id:
+        id:
+            type: integer
+            unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        login:
+            type: string
+            length: 255
+        password:
+            type: string
+            length: 255
+
+    oneToOne:
+        profile:
+            targetEntity: Profile
+            mappedBy: user
+            cascade:
+                - persist
+                - remove

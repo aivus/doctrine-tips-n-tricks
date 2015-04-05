@@ -1,0 +1,24 @@
+Profile:
+    type: entity
+    table: profile
+    repositoryClass: ProfileRepository
+    id:
+        id:
+            type: integer
+            unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        interests:
+            type: text
+        about:
+            type: text
+
+    oneToOne:
+        user:
+            targetEntity: User
+            inversedBy: profile
+            cascade:
+                - persist
+                - remove
