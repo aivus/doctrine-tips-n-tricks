@@ -1,0 +1,6 @@
+EmployeeJoined:
+  table: employee_joined
+  type: entity
+  fields:
+      test:
+          type: text

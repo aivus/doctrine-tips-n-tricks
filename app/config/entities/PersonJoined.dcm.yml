@@ -1,0 +1,17 @@
+PersonJoined:
+    table: person_joined
+    type: entity
+    inheritanceType: JOINED
+    discriminatorColumn:
+      name: discr
+      type: string
+    discriminatorMap:
+      person: PersonJoined
+      employee: EmployeeJoined
+    id:
+        id:
+            type: integer
+            unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
