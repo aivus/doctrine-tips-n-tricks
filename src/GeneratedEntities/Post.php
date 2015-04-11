@@ -110,4 +110,3 @@ class Post
         return $this->category;
     }
 }
-

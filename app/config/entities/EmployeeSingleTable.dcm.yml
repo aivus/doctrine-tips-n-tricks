@@ -1,0 +1,8 @@
+EmployeeSingleTable:
+  # This table option not working.
+  # Because EmployeeSingleTable extends PersonSingleTablegst
+  table: employee_single_table
+  type: entity
+  fields:
+      test:
+          type: text

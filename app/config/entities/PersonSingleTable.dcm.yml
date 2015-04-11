@@ -1,0 +1,17 @@
+PersonSingleTable:
+    table: person_single_table
+    type: entity
+    inheritanceType: SINGLE_TABLE
+    discriminatorColumn:
+      name: discr
+      type: string
+    discriminatorMap:
+      person: PersonSingleTable
+      employee: EmployeeSingleTable
+    id:
+        id:
+            type: integer
+            unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
