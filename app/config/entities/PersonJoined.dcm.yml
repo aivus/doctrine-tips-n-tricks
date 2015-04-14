@@ -15,3 +15,7 @@ PersonJoined:
             id: true
             generator:
                 strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            length: 255

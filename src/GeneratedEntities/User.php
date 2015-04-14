@@ -95,7 +95,10 @@ class User
      */
     public function setProfile(\Profile $profile = null)
     {
-//        $profile->setUser($this);
+//        if ($profile) {
+//            $profile->setUser($this);
+//        }
+
         $this->profile = $profile;
 
         return $this;

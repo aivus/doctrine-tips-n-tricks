@@ -12,6 +12,10 @@ class PersonJoined
      */
     private $id;
 
+    /**
+     * @var string
+     */
+    private $name;
 
     /**
      * Get id
@@ -21,5 +25,30 @@ class PersonJoined
     public function getId()
     {
         return $this->id;
+    }
+
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     *
+     * @return PersonJoined
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
     }
 }
