@@ -17,4 +17,4 @@ $entityManager->persist($user);
 //$entityManager->persist($profile);
 $entityManager->flush();
 
-// Profile entity have null in "user_id" column
+// Profile entity has null in "user_id" column
